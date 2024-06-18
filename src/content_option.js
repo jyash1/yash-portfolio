@@ -19,7 +19,7 @@ const introdata = {
 const dataabout = {
   title: "abit about my self",
   aboutme:
-    "Hey! This is Yash Jain. I'm a Frontend Developer In React.JS. Else you will know about me with my work and I think that Is the best way to Introduce ourselves",
+    "Hey! I'm Yash Jain. I'm a passionate and dedicated Frontend Developer specializing in React.js. With a strong foundation in web development and a keen eye for design, I create intuitive, responsive, and dynamic user interfaces. My expertise includes working with modern JavaScript frameworks, optimizing web performance, and ensuring cross-browser compatibility. I thrive on challenges and am always eager to learn new technologies and improve my skills. Let's build something amazing together! ",
 };
 
 const skills = [

@@ -29,7 +29,7 @@ export const ContactUs = () => {
     };
 
     emailjs
-      .send(
+      .send(  
         contactConfig.YOUR_SERVICE_ID,
         contactConfig.YOUR_TEMPLATE_ID,
         templateParams,

@@ -19,12 +19,12 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+    setFormdata((prevData) => ({ ...prevData, loading: true }));
 
     const templateParams = {
       from_name: formData.email,
       user_name: formData.name,
-      to_name: contactConfig.YOUR_EMAIL,
+      to_name: contactConfig.name,
       message: formData.message,
     };
 
@@ -33,25 +33,28 @@ export const ContactUs = () => {
         contactConfig.YOUR_SERVICE_ID,
         contactConfig.YOUR_TEMPLATE_ID,
         templateParams,
-        contactConfig.YOUR_USER_ID
+        contactConfig.YOUR_USER_ID 
       )
       .then(
         (result) => {
           console.log(result.text);
-          setFormdata({
+          setFormdata((prevData) => ({
+            ...prevData,
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "SUCCESS! Thank you for your message.",
             variant: "success",
             show: true,
-          });
+          }));
         },
         (error) => {
           console.log(error.text);
-          setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+          setFormdata((prevData) => ({
+            ...prevData,
+            loading: false,
+            alertmessage: `Failed to send! ${error.text}`,
             variant: "danger",
             show: true,
-          });
+          }));
           document.getElementsByClassName("co_alert")[0].scrollIntoView();
         }
       );
@@ -81,12 +84,11 @@ export const ContactUs = () => {
         <Row className="sec_sp">
           <Col lg="12">
             <Alert
-              //show={formData.show}
               variant={formData.variant}
               className={`rounded-0 co_alert ${
                 formData.show ? "d-block" : "d-none"
               }`}
-              onClose={() => setFormdata({ show: false })}
+              onClose={() => setFormdata((prevData) => ({ ...prevData, show: false }))}
               dismissible
             >
               <p className="my-0">{formData.alertmessage}</p>

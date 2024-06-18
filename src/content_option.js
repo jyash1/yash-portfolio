@@ -8,12 +8,12 @@ const meta = {
 const introdata = {
   title: "I’m Yash Jain",
   animated: {
-    first: "I love coding",
-    second: "I code cool websites",
-    third: "I develop Responsive websites",
+    first: "I love coding.",
+    second: "I code cool websites.",
+    third: "I develop Responsive websites.",
   },
-  description: "Hey! This is Yash Jain. I'm a Frontend Developer In React.JS. ",
-  your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+  description: "Hey! I'm Yash Jain. I'm a passionate and dedicated Frontend Developer specializing in React.js. With a strong foundation in web development and a keen eye for design, I create intuitive, responsive, and dynamic user interfaces. My expertise includes working with modern JavaScript frameworks, optimizing web performance, and ensuring cross-browser compatibility. I thrive on challenges and am always eager to learn new technologies and improve my skills. Let's build something amazing together! ",
+  your_img_url: "/my_image.jpeg",
 };
 
 const dataabout = {
@@ -65,9 +65,9 @@ const services = [
       "The website Is the most Important thing your Business will need. We are making websites according to your requirements and with our experties even tho. Animated design.",
   },
   {
-    title: "Responsive Website Design ",
+    title: "Freelance Work as per the Requirements",
     description:
-      "In a websites Responsiveness Is the much needed functionality and we are providing that with full of smoothness.",
+      "We are providing the freelance work option based on your requirements with full of animation and responsivness support.",
   },
 ];
 
@@ -79,16 +79,16 @@ const dataportfolio = [
     link: "https://mmfinfotech.co/abhi-infotech/#home",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
+    img: "https://picsum.photos/400/400/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "This is my portfolio which I've made using Html & Css ,React.Js, JavaScript and I've also used animation effects In this project ",
+    link: "https://jyash-portfolio.netlify.app/",
   },
   {
     img: "https://picsum.photos/400/800/?grayscale",
     description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+      "I've made this website using Html & Css ,React.Js, JavaScript and Material UI ",
+    link: "https://affirmate.app/app/skylife",
   },
 ];
 
@@ -96,10 +96,9 @@ const contactConfig = {
   YOUR_EMAIL: "jyash10145@gmail.com",
   YOUR_FONE: "8889117171",
   description: " 8, Ambedkar Nagar, Lig, Indore, (452001)  ",
-
-  YOUR_SERVICE_ID: "jyash10145@gmail.com",
-  YOUR_TEMPLATE_ID: "jyash10145@gmail.com",
-  YOUR_USER_ID: "1",
+  YOUR_SERVICE_ID: "service_7g2jnub",
+  YOUR_TEMPLATE_ID: "template_60iyhl2",
+  YOUR_USER_ID: "OCt6BUIERZ6dC-NEg",
 };
 
 const socialprofils = {
